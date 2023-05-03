@@ -25,7 +25,7 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
             value={searchTerm}
             onChangeText={(text) => setSearchTerm(text)}
             placeholder='Find jobs that meet your preference!'
-            onChange={() => { }}
+           
           />
 
 
