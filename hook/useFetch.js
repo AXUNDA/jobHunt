@@ -1,4 +1,7 @@
-import { useState, useEffect } from "react";
+import {
+      useState,
+      useEffect
+} from "react";
 import axios from "axios";
 
 const useFetch = (endpoint, query) => {
@@ -13,11 +16,14 @@ const useFetch = (endpoint, query) => {
                   "X-RapidAPI-Key": '',
                   "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
             },
-            params: { ...query },
+            params: {
+                  ...query
+            },
       };
 
       const fetchData = async () => {
             setIsLoading(true);
+
 
             try {
                   const response = await axios.request(options);
@@ -41,7 +47,12 @@ const useFetch = (endpoint, query) => {
             fetchData();
       };
 
-      return { data, isLoading, error, refetch };
+      return {
+            data,
+            isLoading,
+            error,
+            refetch
+      };
 };
 
 export default useFetch;

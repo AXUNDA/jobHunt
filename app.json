@@ -5,6 +5,14 @@
       "bundler": "metro"
     },
     "name": "jobIt",
-    "slug": "jobIt"
+    "slug": "jobIt",
+    "extra": {
+      "eas": {
+        "projectId": "865c3fe1-3eee-4604-9967-4e8368fccd32"
+      }
+    },
+    "android": {
+      "package": "com.azunda.jobIt"
+    }
   }
 }
